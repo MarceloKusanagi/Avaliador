@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+	charset="ISO-8859-1"></meta>
+<title>Avaliador de seguran&ccedil;a de senha</title>
+</head>
+<body>
+	<h1>Avaliador de seguran&ccedil;a de senha</h1>	
+	<p th:text="'Senha: ' + ${validarSenha.senha}" />
+	<p th:text="'Pontos: ' + ${validarSenha.pontos} + '%'" />
+	<p th:text="'Complexidade: ' + ${validarSenha.complexidade}" />
+
+	<a href="/">Avaliar nova senha</a>
+</body>
+</html>

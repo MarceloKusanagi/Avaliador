@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+	charset="ISO-8859-1"></meta>
+<title>Avaliador de seguran&ccedil;a de senha</title>
+</head>
+<body>
+	<h1>Avaliador de seguran&ccedil;a de senha</h1>
+	<form action="#" th:action="@{/calcular}" th:object="${validarSenha}"
+		method="post">
+		<div>
+			<label>Senha:</label> <input type="text" th:field="*{senha}" />
+			<p>Pontos: 0%</p>
+			<p>Complexidade: Muito Curta</p>
+			<p>
+				<input type="submit" value="Calcular" />
+			</p>
+		</div>
+	</form>
+</body>
+</html>
